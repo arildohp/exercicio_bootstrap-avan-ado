@@ -8,6 +8,11 @@
      <style>
       section{
         margin: 22px;
+      @media (max-width:767px){
+       .carousel-item img{
+        height: 150px;
+    }
+}
       }
      </style>
     
@@ -18,13 +23,13 @@
       <div id="carousel-exemplo" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div data-bs-interval="2000" class="carousel-item active">
-               <img src="./img/slide-1.jpeg" alt="slide-1">
+               <img src="./img/slide-1.jpeg" class="d-block w-100" alt="slide-1">
           </div>            
           <div data-bs-interval="2000" class="carousel-item">
-             <img src="./img/slide-2.jpeg" alt="slide-2">
+             <img src="./img/slide-2.jpeg" class="d-block w-100" alt="slide-2">
           </div>     
           <div data-bs-interval="2000" class="carousel-item">    
-             <img src="./img/slide-3.jpg" alt="slide-3">
+             <img src="./img/slide-3.jpg" class="d-block w-100" alt="slide-3">
           </div>
        </div>
        <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
